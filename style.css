@@ -1,0 +1,349 @@
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0px;
+}
+.nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background-color: rgb(139, 79, 0);
+    z-index: 2;
+}
+
+.nav div {
+    padding: 30px 10px;
+}
+.nav div img{
+    scale: 25%;
+    margin-left: -200px;
+    transition: 1s;
+}
+.nav div img:hover{
+    scale: 30%;
+    transition: 1s;
+}
+.nav div a{
+    text-decoration: none;
+}
+header div {
+    text-align: left;
+    font-size: 125%;
+}
+
+header div a {
+    text-decoration: none;
+    transition: 1s;
+}
+
+header div a:hover {
+    font-size: 90%;
+    transition: 1s;
+}
+
+header {
+    display: flex;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    color: rgb(229, 255, 0);
+    padding: 10px;
+}
+
+.nav a {
+    padding: 10px 25px;
+    text-decoration: none;
+    transition: 1s;
+    width: 100%;
+}
+.nav-btn{
+    font-size: 20px;
+    color: white;
+}
+.nav-btn .nav-item{
+    position: relative;
+    display: inline;
+    color: white;
+    margin: 0 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.nav-btn .icon .teks{
+    position: absolute;
+    left: 50%;
+    transform: translateY(-50%);
+    transition: opacity 0.3s ease;
+}
+.ikon {
+    opacity: 1;
+    transition: 1s;
+}
+.teks{
+    opacity: 0;
+    transition: 1s;
+}
+.nav-btn .nav-item:hover .ikon{
+    opacity: 0;
+    transition: 1s;
+}
+.nav-btn .nav-item:hover .teks{
+    opacity: 1;
+    transition: 1s;
+    background-color: rgb(132, 146, 1);
+    border-radius: 25px;
+}
+
+/*.nav-btn a:hover{
+    background-color: rgb(117, 163, 11);
+    border-radius: 25px;
+    font-size: 110%;
+    animation: ganti forwards;
+    animation-duration: 1s;
+    display: inline;
+}
+.nav-btn i{
+    opacity: 1;
+    margin: 10px;
+}*/
+.nav a:hover {
+    width: 80%;
+    transition: 1s;
+}
+
+section.home {
+    height: 800px;
+    background: url(wine\ nanas.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 100px;
+}
+
+section.home div {
+    text-align: center;
+    color: black;
+    margin: auto;
+    width: 70%;
+    padding: 20px;
+}
+
+section.home .welcome {
+    font-size: 50px;
+    animation: fadein;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    color: white;
+}
+.home .deskripsi{
+    font-size: 25px;
+    color: white;
+}
+
+section.home a {
+    color: white;
+    background-color: black;
+    opacity: 0.75;
+    padding: 10px 20px;
+    text-decoration: none;
+    box-shadow: 0px 0px 10px;
+    border-radius: 25px;
+    transition: 1s;
+}
+.home a:hover{
+    font-size: 150%;
+    background-color: transparent;
+    opacity: 1;
+    transition: 1s;
+}
+section.home:hover {
+    size: 200%;
+    transition: 1s;
+}
+section.about {
+    background: url(bar.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 600px;
+    padding-top: 100px;
+}
+
+section.about div {
+    color: white;
+    text-align: center;
+    margin: auto;
+    width: 70%;
+}
+
+
+section.about img {
+    height: 200px;
+}
+
+section.produk {
+    background: url(wine\ nanas.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 1200px;
+    z-index: 1;
+}
+
+/*section.produk .container {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    z-index: 1;
+}*/
+
+section.produk .container .card {
+    position: relative;
+    padding: 5px;
+    width: 300px;
+    height: 300px;
+    margin: 15px;
+    box-shadow: 0 0 5px black;
+    background-color: white;
+    text-align: center;
+    overflow: hidden;
+    transition: 1s;
+    border-radius: 15px;
+    z-index: 1;
+}
+.produk .container .lokal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.produk .container .madu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section.produk .container .card .gambar {
+    position: relative;
+    width: 100%;
+}
+
+section.produk .container .card:hover .gambar img {
+    scale: 1.1;
+    position: relative;
+    width: 100%;
+    filter: opacity(65%);
+    transition: 1s;
+}
+
+section.produk .container .card img {
+    border-radius: 15px;
+    width: 100%;
+    transition: 1s;
+}
+
+section.produk .container .card .deskripsi {
+    color: white;
+    position: absolute;
+    top: 200px;
+    transition: 1s;
+}
+section.produk .container .card:hover .deskripsi {
+    top: 0px;
+    transition: 1s;
+}
+
+section.produk .container .card .deskripsi a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+}
+
+section.produk .container .card a {
+    color: black;
+    padding: 5px 20px;
+    text-decoration: none;
+    box-shadow: 0px 0px 3px;
+    border-radius: 20px;
+    transition: 2s;
+}
+
+section.produk .container .card a:hover {
+    scale: 200%;
+    box-shadow: 0px 0px 10px;
+    color: rgb(87, 97, 1);
+    transition: 1s;
+}
+
+section.kontak {
+    background-color: black;
+    height: 350px;
+}
+
+section.kontak .card {
+    margin: auto;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    width: 400px;
+}
+
+section.kontak .card img {
+    width: 200px;
+}
+
+footer {
+    background-color: grey;
+    height: 50px;
+}
+
+footer .medsos {
+    text-align: center;
+    padding-top: 10px;
+}
+
+footer .medsos a {
+    color: white;
+    font-size: 20px;
+    padding: 50px 20px;
+    transition: 1s;
+}
+.medsos a:hover{
+    font-size: 25px;
+    transition: 1s;
+}
+
+
+@keyframes fadein {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
